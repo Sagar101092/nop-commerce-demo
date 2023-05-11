@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JobSearch test" verbose="1" >
+
+    <listeners>
+        <listener class-name="com.nopcommerce.demo.customelisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="NopCommerce Test" >
+        <classes>
+            <class name="com.nopcommerce.demo.testsuites.RegisterPageTest"/>
+            <class name="com.nopcommerce.demo.testsuites.LoginPageTest"/>
+            <class name="com.nopcommerce.demo.testsuites.ComputerPageTest"/>
+        </classes>
+    </test>
+</suite>
